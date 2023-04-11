@@ -1,0 +1,30 @@
+Répartition du travail :
+BRIZAY 55 % - KICIEN 45 %
+
+Liste des fonctionnalités de base :
+    3 listes : adhérents / livres dispo / livres empruntés : oui - BRIZAY
+    ajout adhérent : oui - BRIZAY
+    ajout livre : oui - KICIEN
+    emprunter un livre : oui - KICIEN
+    retour d'un livre : oui - KICIEN
+    nombre d'emprunts d'un adhérent : oui - KICIEN
+    liste des livres empruntés d'un adhérent : oui - BRIZAY
+
+Liste des fonctionnalités supplémentaires :
+    requêtes GET & POST : oui - BRIZAY
+    Dans script-promise.js.
+    suppression d'un livre : oui - BRIZAY/KICIEN
+    suppression d'un adhérent : oui - BRIZAY/KICIEN
+    emprunteur d'un livre : oui - BRIZAY
+    utilisation d'une API externe : oui - KICIEN
+    -> Décrire en qq lignes l'API et les données qu'elle fournit
+        Nous avons utilisé l'API de Google Books qui permet d'afficher la couverture du livre dans notre code :
+        L'API renvoie un tableau de 10 livres au maximum qui correspondent à la description donné en paramètre (q=)
+        dans ce tableau on sélectionne le premier livre qui contient une image puis on rentre dans l'objet 'volumeInfo'
+        pour avoir diverses informations sur le livre et on lit l'objet imageLinks pour avoir une image de représentation
+        du livre et smallThumbnail pour avoir une image réduite.
+        Elle renvoie néanmoins beaucoup plus d'informations telles que le synopsis du livre, sa date de publication,
+        son titre, son auteur ou encore l'éditeur.
+    utilisation de fetch avec then : oui - BRIZAY
+    L'utilisation de fetch et then à été englobée dans une promise pour éviter la duplication de code.
+    utilisation de fetch avec async/await : oui - BRIZAY

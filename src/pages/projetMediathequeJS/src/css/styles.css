@@ -1,0 +1,139 @@
+body {
+	/*font-family: courier new;*/
+	width:75%;
+	margin:1em auto 0 auto;
+	padding:0px 20px 20px 20px;
+	border:solid 2px grey;
+}
+
+#lockPage {
+	width: 100%;
+	display: flex;
+	opacity: 40%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left : 0;
+	align-items: flex-start;
+	background-color: #000000;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+#popup {
+	top: 50px;
+	left: 0px;
+	right: 0px;
+	width: 80%;
+	height: 300px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	opacity: 1;
+	position: absolute;
+	border-radius: 10px;
+	background-color: white;
+}
+
+#popup > * {
+	margin: auto;
+}
+
+#croix {
+	cursor: pointer;
+	top: 5px;
+	right: 5px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	object-fit: cover;
+}
+
+#croix:hover {
+	background-color: lightgray;
+}
+
+#emprunts li {
+	list-style-type:  "➢";
+	padding-inline-start: 1ch;
+}
+
+#emprunts li:hover {
+	cursor: default;
+	background-color: white;
+}
+
+#couverture {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100px;
+	bottom: 0px;
+	margin: auto;
+	position: absolute;
+	align-self: center;
+	object-fit: cover;
+}
+
+#enregistrements, #listes {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 2em;
+}
+
+#ajoutAdherent {
+	width:50%;
+}
+#ajoutLivre {
+	width:50%;
+}
+#adh {
+	width:20%;
+}
+#dispos, #empr {
+	width:40%;
+}
+
+#adh fieldset, #dispos fieldset, #empr fieldset {
+	min-height:35em;
+}
+
+legend {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 2em;
+	color:white;
+	background-color: grey;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+ul {
+	padding-left: 20px;
+}
+li {
+	cursor:pointer;
+	background-color: white;
+	line-height: 1.5em;
+}
+li:hover {
+	background-color: lightgrey;
+}
+input {
+	padding:5px;
+	font-size: 1.2em;
+}
+
+input[type="button"] {
+	width:25%;
+}
+input[type="text"] {
+	width:70%;
+}
+
+input {
+	min-height:1.2em;
+}

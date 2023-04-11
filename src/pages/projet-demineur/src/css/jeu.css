@@ -1,0 +1,64 @@
+.element {
+    width: 18px;
+    position: absolute;
+}
+
+#champ {
+    background-image: url('../img/champ.png');
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+#message {
+    position: fixed;
+    top: 100px;
+    left: 550px;
+}
+
+#score {
+    position: fixed;
+    top: 50px;
+    left: 550px;
+}
+
+#aide{
+    position: fixed;
+    top: 150px;
+    left: 550px;
+}
+
+#description{
+    position: fixed;
+    top: 200px;
+    left: 550px;
+}
+
+#lien {
+    position: fixed;
+    top: 470px;
+    left: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    border: solid 1px grey;
+    border-radius: 4px;
+    background-color: lightgrey;
+    box-shadow: 4px 4px 4px grey;
+    color: black;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+    line-height: 1.5em;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+button:active {
+    top: 2px;
+    left: 2px;
+    box-shadow: 2px 2px 2px grey;
+}
